@@ -33,6 +33,7 @@ public class WeatherUtil {
                         }
                         else if (parser.getName().equals("temperature")) {
                             wt.setTemperature(parser.getAttributeValue(null,"value"));
+                            //wt.setTemperature(parser.nextText().trim());
                         }
                         else if (parser.getName().equals("clouds")) {
                             wt.setCondition(parser.getAttributeValue(null,"value"));
